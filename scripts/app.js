@@ -1,5 +1,12 @@
 const app = {}
 
+app.randomBanner = () => {
+    const randomElement = Math.floor(Math.random() * array.length);
+    return randomElement;
+}
+
+app.bannerArray = [ "banner-1", "banner-2", "banner-3" ]
+
 app.events = () => {
     $("form").on("submit", function (e) {
         // prevents browser default behaviour

@@ -118,3 +118,12 @@ body, figure {
 legend, button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
+
+.banner-1 {
+  border: 3px solid mediumvioletred; }
+
+.banner-2 {
+  border: 2px solid dodgerblue; }
+
+.banner-3 {
+  background: darkcyan; }
