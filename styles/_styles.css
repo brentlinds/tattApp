@@ -119,6 +119,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
+.banner {
+  font-size: 24px; }
+
 .banner-1 {
   border: 3px solid mediumvioletred; }
 

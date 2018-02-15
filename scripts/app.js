@@ -1,11 +1,12 @@
 const app = {}
 
 app.randomBanner = () => {
-    const randomElement = Math.floor(Math.random() * array.length);
-    return randomElement;
+    const chosenBanner = Math.floor(Math.random() * app.bannerArray.length);
+    $('.banner').addClass(chosenBanner);
+    console.log(chosenBanner)
 }
 
-app.bannerArray = [ "banner-1", "banner-2", "banner-3" ]
+app.bannerArray = ["banner-1", "banner-2", "banner-3"]
 
 app.events = () => {
     $("form").on("submit", function (e) {
@@ -15,7 +16,8 @@ app.events = () => {
         const favething = $("input").val();
         console.log(favething);
         // passing user's input into the function that retrieves their icon
-        app.newIcon(favething)
+        app.newIcon(favething);
+        app.randomBanner();
     })
 }
 
