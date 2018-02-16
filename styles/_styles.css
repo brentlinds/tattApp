@@ -127,6 +127,9 @@ h1 {
   color: white;
   font-size: 65px; }
 
+.reveal {
+  display: block; }
+
 .results {
   background-color: white; }
 
@@ -358,18 +361,23 @@ form {
     -webkit-transform: translate(0);
     transform: translate(0); } }
 
-.banner {
-  font-size: 24px;
-  color: white; }
-
 .banner p {
   color: white; }
 
 .banner-1 {
-  border: 3px solid mediumvioletred; }
+  border: 3px solid mediumvioletred;
+  font-size: 24px;
+  color: white;
+  display: block; }
 
 .banner-2 {
-  border: 2px solid dodgerblue; }
+  border: 2px solid dodgerblue;
+  font-size: 24px;
+  color: white;
+  display: block; }
 
 .banner-3 {
-  background: darkcyan; }
+  background: darkcyan;
+  font-size: 24px;
+  color: white;
+  display: block; }
