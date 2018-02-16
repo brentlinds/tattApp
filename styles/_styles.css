@@ -122,6 +122,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 body {
   background-color: black; }
 
+h1 {
+  font-family: 'Tangerine', cursive;
+  color: white;
+  font-size: 65px; }
+
 .results {
   background-color: white; }
 
@@ -138,6 +143,20 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+
+input {
+  background: black;
+  border-radius: 50px;
+  border: 2px solid grey;
+  padding: 12px;
+  color: grey;
+  font-size: 16px; }
+
+button[type=submit] {
+  display: none; }
+
+form {
+  padding-top: 50px; }
 
 .loader {
   position: absolute;
@@ -340,7 +359,11 @@ body {
     transform: translate(0); } }
 
 .banner {
-  font-size: 24px; }
+  font-size: 24px;
+  color: white; }
+
+.banner p {
+  color: white; }
 
 .banner-1 {
   border: 3px solid mediumvioletred; }

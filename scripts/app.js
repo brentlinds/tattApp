@@ -5,7 +5,8 @@ app.randomBanner = (bannerWord) => {
     let randomIndex = Math.floor(Math.random() * bannerArray.length);
     let rando = bannerArray[randomIndex]
     $('div.banner').addClass(rando);
-    $('div.banner').html(`<p>${bannerWord}</p>`)
+    $('div.banner p#example').text(bannerWord + " 4lyfe till I die everyday")
+    
 }
 
 app.newIcon = (query) => {
@@ -26,6 +27,7 @@ app.newIcon = (query) => {
         let image = random.preview_url;
         console.log(image);
         $(".results").html(`<img src= ${image}>`);
+        // $("#demo1").text(" 4lyfe")
         
     });
 }
@@ -36,11 +38,12 @@ app.events = () => {
         e.preventDefault();
         // creates a variable to hold user's input
         const favething = $("input").val();
+        if(favething !== "") {
         // $('input').val("");
         // passing user's input into the function that retrieves their icon
         $('.loader').show().delay(3000).fadeOut();
         app.newIcon(favething);
-        app.randomBanner(favething);
+        app.randomBanner(favething);}
     })
 }
 
@@ -52,3 +55,14 @@ $(function(){
     app.init();
 
 });
+
+// // Instantiate `CircleType` with an HTML element.
+// const circleType = new CircleType(document.getElementById('demo1'));
+
+// // Set the text radius and direction. Note: setter methods are chainable.
+// circleType.radius(150).dir(-1);
+
+
+        $().ready(function() {
+            $('#example').arctext({ radius: 300 });
+        });
