@@ -1,16 +1,17 @@
 const app = {}
 
 app.randomBanner = (bannerWord) => {
-    let bannerArray = ["banner-1", "banner-2", "banner-3"]
+    let bannerArray = ["banner-1", "banner-2", "banner-3", "banner-4", "banner-5", "banner-6"]
+    let randomWords = ["4 life", "I heart", "or die"]
     let randomIndex = Math.floor(Math.random() * bannerArray.length);
+    let randomWordIndex = Math.floor(Math.random() * randomWords.length);
     let rando = bannerArray[randomIndex]
-    $("form").on('submit', function() {
-        $('.banner').switchClass("banner", rando, 1000, "easeInOutQuad");
+        $(".banner").removeClass("banner");
+        $(".bannerall").addClass(rando);
 
-    // $('div.banner').switchClass('banner', rando, 1000, "easeInOutQuad");
     // .delay$('#example').arctext({ radius: 300 });
-})
-$('div.banner p#example').text(bannerWord + " 4lyfe till I die everyday")
+// })
+$('div.bannerall').text(bannerWord + randomWords[randomWordIndex])
 }
 
 app.newIcon = (query) => {
@@ -31,7 +32,6 @@ app.newIcon = (query) => {
         let image = random.preview_url;
         console.log(image);
         $(".results").html(`<img src= ${image}>`);
-        // $("#demo1").text(" 4lyfe")
         
     });
 }

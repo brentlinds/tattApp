@@ -1,0 +1,4 @@
+brentlist
+- focus on cursor
+- attribution page
+

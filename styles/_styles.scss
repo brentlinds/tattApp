@@ -17,7 +17,7 @@ h1 {
 }
 
 .results {
-    background-color: white;
+    background-color: $backgroundColour;
 }
 
 .wrapper {
@@ -305,29 +305,43 @@ form {
     color: white;
 }
 
-.banner-1 {
+.banner-1, .banner-4 {
     border: 3px solid mediumvioletred;
     font-size: 24px;
     color: white;
     display: block;
+    height: 10px;
 }
 
-.banner-2 {
+.banner-1::after {
+  content: "4 life";
+}
+
+.banner-2, .banner-5 {
     border: 2px solid dodgerblue;
     font-size: 24px;
     color: white;
     display: block;
+    height: 10px;
 }
 
-.banner-3 {
+.banner-3, .banner-6 {
     background: darkcyan;
     font-size: 24px;
     color: white;
     display: block;
+    height: 10px;
 }
 
 .banner {
-    // font-size: 24px;
-    // color: white;
+    font-size: 24px;
+    color: white;
     // display: none;
+    height: 50px;
+    // background-color: aliceblue;
+}
+
+.bannerall {
+  // background-color: 3px solid grey;
+  // height: 30px;
 }
