@@ -9,6 +9,11 @@ h1 {
     font-family: 'Tangerine', cursive;
     color: white;
     font-size: 65px;
+    // display: none;
+}
+
+.reveal {
+    display: block;
 }
 
 .results {
@@ -294,10 +299,7 @@ form {
 
 
 
-.banner {
-    font-size: 24px;
-    color: white;
-}
+
 
 .banner p {
     color: white;
@@ -305,12 +307,27 @@ form {
 
 .banner-1 {
     border: 3px solid mediumvioletred;
+    font-size: 24px;
+    color: white;
+    display: block;
 }
 
 .banner-2 {
     border: 2px solid dodgerblue;
+    font-size: 24px;
+    color: white;
+    display: block;
 }
 
 .banner-3 {
     background: darkcyan;
+    font-size: 24px;
+    color: white;
+    display: block;
+}
+
+.banner {
+    // font-size: 24px;
+    // color: white;
+    // display: none;
 }

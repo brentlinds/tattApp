@@ -4,9 +4,13 @@ app.randomBanner = (bannerWord) => {
     let bannerArray = ["banner-1", "banner-2", "banner-3"]
     let randomIndex = Math.floor(Math.random() * bannerArray.length);
     let rando = bannerArray[randomIndex]
-    $('div.banner').addClass(rando);
-    $('div.banner p#example').text(bannerWord + " 4lyfe till I die everyday")
-    
+    $("form").on('submit', function() {
+        $('.banner').switchClass("banner", rando, 1000, "easeInOutQuad");
+
+    // $('div.banner').switchClass('banner', rando, 1000, "easeInOutQuad");
+    // .delay$('#example').arctext({ radius: 300 });
+})
+$('div.banner p#example').text(bannerWord + " 4lyfe till I die everyday")
 }
 
 app.newIcon = (query) => {
@@ -64,5 +68,5 @@ $(function(){
 
 
         $().ready(function() {
-            $('#example').arctext({ radius: 300 });
+            $('#example').arctext({ radius: 500 });
         });
