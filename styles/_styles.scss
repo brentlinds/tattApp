@@ -25,24 +25,26 @@ header {
 // if we add any more we might need to find another way to do this
 img {
     padding: 0;
-    margin: 50px 50px 0 50px;
+    // margin: 50px 50px 0 50px;
     // border: 3px solid mediumvioletred;
     background-color: transparent;
 }
 
 
 .resultsall {
-    // background-color: $mainContrast;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid mediumvioletred;
-    // background: url("images/daria-shevtsova-57355.jpg");
-    background-color: #9a999c;
-background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    
+    background: url("images/linedpaper.png");
+    background-image: cover;
+    background-repeat: no-repeat;
     border-radius: 10%;
+    // padding: 50px 40px;
+    margin: 10px;
+}
+
+.resultscontainer {
+    // border: 3px solid mediumvioletred;
 }
 
 .wrapper {
@@ -106,7 +108,10 @@ button[type=submit] {
     left:0;
     right:0;
     display: none;
-    background:black;
+    // background:black;
+   background-color: #252526;
+background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     height: 100vh;
     z-index: 999999999999999999;
 }
