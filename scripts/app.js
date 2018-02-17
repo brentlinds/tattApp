@@ -4,7 +4,10 @@ app.randomBanner = (bannerWord) => {
     let bannerArray = ["banner-1", "banner-2", "banner-3", "banner-4", "banner-5", "banner-6"]
     let randomWords = [" 4 life", " AF", " or die", " before dishonour", " for life", " and kittens"]
     let randomIndex = Math.floor(Math.random() * bannerArray.length);
+    // chooses some random text from the above array
     let randomWordIndex = Math.floor(Math.random() * randomWords.length);
+    // chooses a random banner from the above array
+    
     let rando = bannerArray[randomIndex]
         $(".banner").removeClass("banner");
     const ban = $('.bannerall');
@@ -21,6 +24,7 @@ app.randomBanner = (bannerWord) => {
     } else if (ban.hasClass('banner-6')) {
         ban.removeClass('banner-6');}
         $(".bannerall").addClass(rando);
+        $(".bannerall").addClass("bannerafter");
         $(".formcontainer").addClass("moveform");
         $('div.bannerall').text(bannerWord + randomWords[randomWordIndex])
 }

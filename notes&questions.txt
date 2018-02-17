@@ -2,3 +2,11 @@ brentlist
 - focus on cursor
 - attribution page
 
+to do 
+- fix button (add arrow)
+- display results
+- loader 
+    - rotate image
+    - uniqeuify animations
+    - generally improve
+- 

@@ -1,9 +1,10 @@
 @import "normalize";
 @import "variables";
 @import "animations";
+@import "banners";
 
 body {
-    background-color: black;
+    background-color: $backgroundColour;
 }
 
 h1, h2 {
@@ -11,21 +12,37 @@ h1, h2 {
     padding: 0;
 }
 
-h1 {
-    color: white;
+h1, p {
+    color: $mainContrast;
 }
 
-p {
-    color: aliceblue;
-}
 
 header {
-    margin: 30px;
+    margin: 20px 0;
+}
+
+// currently the only imgs on the page are being generated from the NounProject
+// if we add any more we might need to find another way to do this
+img {
+    padding: 0;
+    margin: 50px 50px 0 50px;
+    // border: 3px solid mediumvioletred;
+    background-color: transparent;
 }
 
 
-.results {
-    background-color: $backgroundColour;
+.resultsall {
+    // background-color: $mainContrast;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid mediumvioletred;
+    // background: url("images/daria-shevtsova-57355.jpg");
+    background-color: #9a999c;
+background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    
+    border-radius: 10%;
 }
 
 .wrapper {
@@ -38,19 +55,17 @@ header {
 }
 
 input {
-    background: black;
+    background: $backgroundColour;
     border-radius: 50px;
-    border: 2px solid grey;
+    border: 3px dotted $mainContrast;
     padding: 12px;
-    color:grey;
     font-size: 16px;
+    color: $mainContrast;
 }
 
 button[type=submit] {
     display: none;
 }
-
-
 
 .formcontainer {
     width: 100%;
@@ -59,6 +74,13 @@ button[type=submit] {
     align-items: center;
     input {
         margin-top: 50%;
+    }
+    h1 {
+        font-family: 'Londrina Sketch', cursive;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        font-size: 60px;
     }
 }
 
@@ -123,39 +145,3 @@ button[type=submit] {
 }
 
 
-.banner-1, .banner-4 {
-    border: 3px solid mediumvioletred;
-    font-size: 24px;
-    color: white;
-    display: block;
-    height: 10px;
-}
-
-.banner-2, .banner-5 {
-    border: 2px solid dodgerblue;
-    font-size: 24px;
-    color: white;
-    display: block;
-    height: 10px;
-}
-
-.banner-3, .banner-6 {
-    background: darkcyan;
-    font-size: 24px;
-    color: white;
-    display: block;
-    height: 10px;
-}
-
-.banner {
-    font-size: 24px;
-    color: white;
-    // display: none;
-    height: 50px;
-    // background-color: aliceblue;
-}
-
-.bannerall {
-  // background-color: 3px solid grey;
-  // height: 30px;
-}

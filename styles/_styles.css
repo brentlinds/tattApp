@@ -273,24 +273,64 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-transform: translate(0);
     transform: translate(0); } }
 
+.bannerall {
+  color: #000000;
+  font-size: 20px; }
+
+.banner-1 {
+  font-family: 'Barrio', cursive; }
+
+.banner-2 {
+  font-family: 'Megrim', cursive; }
+
+.banner-3 {
+  font-family: 'Share Tech Mono', monospace; }
+
+.banner-4 {
+  font-family: 'Ewert', cursive; }
+
+.banner-5 {
+  font-family: 'Raleway Dots', cursive;
+  font-size: 40px;
+  padding: 10px; }
+
+.banner-6 {
+  font-family: 'Montserrat Subrayada', sans-serif; }
+
 body {
-  background-color: black; }
+  background-color: #32353a; }
 
 h1, h2 {
   margin: 0;
   padding: 0; }
 
-h1 {
-  color: white; }
-
-p {
-  color: aliceblue; }
+h1, p {
+  color: #d1d0de; }
 
 header {
-  margin: 30px; }
+  margin: 20px 0; }
 
-.results {
-  background-color: dodgerblue; }
+img {
+  padding: 0;
+  margin: 50px 50px 0 50px;
+  background-color: transparent; }
+
+.resultsall {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 3px solid mediumvioletred;
+  background-color: #9a999c;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  border-radius: 10%; }
 
 .wrapper {
   width: 80%;
@@ -308,12 +348,12 @@ header {
   position: relative; }
 
 input {
-  background: black;
+  background: #32353a;
   border-radius: 50px;
-  border: 2px solid grey;
+  border: 3px dotted #d1d0de;
   padding: 12px;
-  color: grey;
-  font-size: 16px; }
+  font-size: 16px;
+  color: #d1d0de; }
 
 button[type=submit] {
   display: none; }
@@ -332,6 +372,12 @@ button[type=submit] {
   align-items: center; }
   .formcontainer input {
     margin-top: 50%; }
+  .formcontainer h1 {
+    font-family: 'Londrina Sketch', cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-size: 60px; }
 
 .moveform {
   -webkit-box-orient: horizontal;
@@ -393,29 +439,3 @@ button[type=submit] {
   position: absolute;
   bottom: 30%;
   left: 35%; }
-
-.banner-1, .banner-4 {
-  border: 3px solid mediumvioletred;
-  font-size: 24px;
-  color: white;
-  display: block;
-  height: 10px; }
-
-.banner-2, .banner-5 {
-  border: 2px solid dodgerblue;
-  font-size: 24px;
-  color: white;
-  display: block;
-  height: 10px; }
-
-.banner-3, .banner-6 {
-  background: darkcyan;
-  font-size: 24px;
-  color: white;
-  display: block;
-  height: 10px; }
-
-.banner {
-  font-size: 24px;
-  color: white;
-  height: 50px; }
