@@ -1,15 +1,20 @@
 .bannerall {
     color: #000000;
-    // background: $mainContrast;
     font-size: 20px;
-    // background-image: url("images/daria-shevtsova-57355.jpg");
-    // background: transparent;
+    text-align: center;
 }
 
 
 
 .banner-1 {
     font-family: 'Barrio', cursive;
+    font-size: 30px;
+    &::after {
+        content: "  \2665";
+    }
+    &::before {
+        content: "\2665  ";
+    }
     
 }
 
@@ -21,6 +26,14 @@
 .banner-3 {
     font-family: 'Share Tech Mono', monospace;
     padding: 0 20px 10px;
+    &::before{
+        content: "\21a2  ";
+        font-size: 30px;
+    }
+    &::after{
+        content: "  \21a3";
+        font-size: 30px;
+    }
 }
 
 .banner-4 {

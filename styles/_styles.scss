@@ -24,27 +24,32 @@ header {
 // currently the only imgs on the page are being generated from the NounProject
 // if we add any more we might need to find another way to do this
 img {
-    padding: 0;
-    // margin: 50px 50px 0 50px;
-    // border: 3px solid mediumvioletred;
+    // padding: 0;
+    // padding-top: 30px;
+    padding: 100px 50px 0px;
     background-color: transparent;
 }
 
-
+// setting weird heights/widths/padding so can see the background image while testing - figure out how to do this better
 .resultsall {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("images/linedpaper.png");
-    background-image: cover;
+    background-image: url("images/notebook.png");
+    background-image: contain;
+    // background-image: center;
+    align-self: center;
+    max-width: 100%;
+    width: 600px;
+    height: 800px;
     background-repeat: no-repeat;
-    border-radius: 10%;
-    // padding: 50px 40px;
+    // border-radius: 10%;
     margin: 10px;
-}
-
-.resultscontainer {
-    // border: 3px solid mediumvioletred;
+    img {
+        max-width: 100%;
+        margin-top: 100px;
+    }
+    
 }
 
 .wrapper {
@@ -86,7 +91,6 @@ button[type=submit] {
     }
 }
 
-
 // this class gets added when the form is submitted, do not move above .formcontainer or it'll get overwritten
 .moveform {
     flex-direction: row;
@@ -99,8 +103,6 @@ button[type=submit] {
     }
 }
 
-
-
 .loader {
     position: absolute;
     top: 0;
@@ -108,10 +110,10 @@ button[type=submit] {
     left:0;
     right:0;
     display: none;
-    // background:black;
-   background-color: #252526;
-background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+    background-color: #252526;
+    background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
     height: 100vh;
     z-index: 999999999999999999;
 }

@@ -275,10 +275,16 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .bannerall {
   color: #000000;
-  font-size: 20px; }
+  font-size: 20px;
+  text-align: center; }
 
 .banner-1 {
-  font-family: 'Barrio', cursive; }
+  font-family: 'Barrio', cursive;
+  font-size: 30px; }
+  .banner-1::after {
+    content: "  \2665"; }
+  .banner-1::before {
+    content: "\2665  "; }
 
 .banner-2 {
   font-family: 'Megrim', cursive; }
@@ -286,6 +292,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .banner-3 {
   font-family: 'Share Tech Mono', monospace;
   padding: 0 20px 10px; }
+  .banner-3::before {
+    content: "\21a2  ";
+    font-size: 30px; }
+  .banner-3::after {
+    content: "  \21a3";
+    font-size: 30px; }
 
 .banner-4 {
   font-family: 'Ewert', cursive;
@@ -316,7 +328,7 @@ header {
   margin: 20px 0; }
 
 img {
-  padding: 0;
+  padding: 100px 50px 0px;
   background-color: transparent; }
 
 .resultsall {
@@ -330,11 +342,18 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: url("images/linedpaper.png");
-  background-image: cover;
+  background-image: url("images/notebook.png");
+  background-image: contain;
+  -ms-flex-item-align: center;
+  align-self: center;
+  max-width: 100%;
+  width: 600px;
+  height: 800px;
   background-repeat: no-repeat;
-  border-radius: 10%;
   margin: 10px; }
+  .resultsall img {
+    max-width: 100%;
+    margin-top: 100px; }
 
 .wrapper {
   width: 80%;

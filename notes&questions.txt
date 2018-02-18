@@ -2,11 +2,24 @@ brentlist
 - focus on cursor
 - attribution page
 
+
 to do 
 - fix button (add arrow)
 - display results
+    - contain background image 
+    - right now 
+
 - loader 
-    - rotate image
+    - rotate image (!!!!)
     - uniqeuify animations
+        - separate timing
+        - disappear?
     - generally improve
-- 
+    - background image is currently pulling from their site - download if we're keeping it
+        - BRENT i'm not set on that particular image, just thought it needed something?  let me know what you think
+- favicon
+- spacing over all
+- footer
+- message if no image is available (JS)
+- remove fonts from fontstack that we're not using
+- responsiveness
