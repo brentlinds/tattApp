@@ -2,7 +2,7 @@ const app = {}
 
 app.randomBanner = (bannerWord) => {
     let bannerArray = ["banner-1", "banner-2", "banner-3", "banner-4", "banner-5", "banner-6"]
-    let randomWords = [" 4 life", " AF", " or die", " before dishonour", " for life", " and kittens"]
+    let randomWords = [" 4 life", "  AF", " or die", " before dishonour", " for life", " and kittens", " for the win"]
     let randomIndex = Math.floor(Math.random() * bannerArray.length);
     // chooses some random text from the above array
     let randomWordIndex = Math.floor(Math.random() * randomWords.length);

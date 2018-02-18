@@ -21,5 +21,6 @@ to do
 - spacing over all
 - footer
 - message if no image is available (JS)
+- add more banner word options if we can think of them 
 - remove fonts from fontstack that we're not using
 - responsiveness

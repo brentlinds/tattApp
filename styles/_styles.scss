@@ -31,23 +31,24 @@ img {
 }
 
 // setting weird heights/widths/padding so can see the background image while testing - figure out how to do this better
+// trying to find a background image that's the right look AND the right size 
 .resultsall {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("images/notebook.png");
-    background-image: contain;
+    // background-image: url("images/notebook.png");
+    // background-image: contain;
     // background-image: center;
+    background-color: $mainContrast;
     align-self: center;
     max-width: 100%;
-    width: 600px;
-    height: 800px;
+    // width: 600px;
+    // height: 800px;
     background-repeat: no-repeat;
-    // border-radius: 10%;
+    border-radius: 10px;
     margin: 10px;
     img {
         max-width: 100%;
-        margin-top: 100px;
     }
     
 }

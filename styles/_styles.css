@@ -287,11 +287,20 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     content: "\2665  "; }
 
 .banner-2 {
-  font-family: 'Megrim', cursive; }
+  font-family: 'Megrim', cursive;
+  font-size: 35px;
+  font-weight: bold; }
+  .banner-2::before {
+    content: "\291c  ";
+    font-weight: normal; }
+  .banner-2::after {
+    content: "  \291b";
+    font-weight: normal; }
 
 .banner-3 {
   font-family: 'Share Tech Mono', monospace;
-  padding: 0 20px 10px; }
+  padding: 0 20px 10px;
+  font-size: 32px; }
   .banner-3::before {
     content: "\21a2  ";
     font-size: 30px; }
@@ -304,15 +313,32 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   font-size: 40px;
   font-weight: bold;
   padding: 0 10px 10px; }
+  .banner-4::before {
+    content: "\2606  "; }
+  .banner-4::after {
+    content: "  \2606"; }
 
 .banner-5 {
   font-family: 'Raleway Dots', cursive;
   font-weight: heavy;
   font-size: 40px;
   padding: 10px; }
+  .banner-5::before {
+    content: "\22ee \22ee \22ee    ";
+    font-size: 20px; }
+  .banner-5:after {
+    content: "    \22ee \22ee \22ee";
+    font-size: 20px; }
 
 .banner-6 {
-  font-family: 'Montserrat Subrayada', sans-serif; }
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 35px; }
+  .banner-6::before {
+    font-size: 30px;
+    padding-bottom: 2px; }
+  .banner-6::after {
+    font-size: 30px;
+    padding-bottom: 2px; }
 
 body {
   background-color: #32353a; }
@@ -342,18 +368,15 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url("images/notebook.png");
-  background-image: contain;
+  background-color: #d1d0de;
   -ms-flex-item-align: center;
   align-self: center;
   max-width: 100%;
-  width: 600px;
-  height: 800px;
   background-repeat: no-repeat;
+  border-radius: 10px;
   margin: 10px; }
   .resultsall img {
-    max-width: 100%;
-    margin-top: 100px; }
+    max-width: 100%; }
 
 .wrapper {
   width: 80%;
