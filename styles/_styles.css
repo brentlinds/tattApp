@@ -400,6 +400,11 @@ input {
   padding: 12px;
   font-size: 16px;
   color: #d1d0de; }
+<<<<<<< HEAD
+
+button[type=submit] {
+  display: none; }
+=======
   input:focus {
     outline-color: #d1d0de; }
 
@@ -414,6 +419,7 @@ button[type=submit] {
     right: 5px;
     font-size: 35px;
     cursor: pointer; }
+>>>>>>> ef280b68cb99d621a5e9860bdf8b949198ef95ef
 
 .formcontainer {
   width: 100%;
