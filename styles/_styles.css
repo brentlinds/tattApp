@@ -348,7 +348,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   border-top: 4px dotted #d1d0de;
   text-align: center;
   font-family: 'Cutive Mono', monospace;
-  margin: 5px 0 10px;
+  margin: 50px 0 10px;
   letter-spacing: 3px; }
 
 .footerflex {
@@ -363,6 +363,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .footerflex a {
   text-decoration: underline;
   color: #d1d0de; }
+
+.space {
+  width: 2px;
+  background-color: #d1d0de; }
+
+@media (max-width: 544px) {
+  footer {
+    margin-top: 115px; } }
 
 body {
   background-color: #32353a; }
@@ -403,6 +411,11 @@ img {
   margin: 10px; }
   .resultsall img {
     max-width: 100%; }
+
+@media (max-width: 810px) {
+  .resultsall {
+    position: relative;
+    bottom: 100px; } }
 
 .wrapper {
   width: 90%;
@@ -461,7 +474,14 @@ button[type=submit] {
     text-transform: uppercase;
     letter-spacing: 2px;
     word-spacing: 5px;
-    font-size: 60px; }
+    font-size: 60px;
+    text-align: center; }
+
+@media (max-width: 410px) {
+  .formcontainer h1 {
+    font-size: 40px; }
+  .resultsall {
+    bottom: 65px; } }
 
 .moveform {
   -webkit-box-orient: horizontal;
