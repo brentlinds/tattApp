@@ -1,0 +1,26 @@
+brentlist
+- focus on cursor - DONE WOOOOO
+- attribution page
+
+
+to do 
+- fix button (add arrow) FRIGGIN SEND IT CAUSE ITS DONEEE
+- display results
+    - contain background image 
+    - right now 
+
+- loader 
+    - rotate image (!!!!)
+    - uniqeuify animations
+        - separate timing
+        - disappear?
+    - generally improve
+    - background image is currently pulling from their site - download if we're keeping it
+        - BRENT i'm not set on that particular image, just thought it needed something?  let me know what you think
+- favicon //OH BABY YOU'RE DONE TOO
+- spacing over all
+- footer
+- message if no image is available (JS)
+- add more banner word options if we can think of them 
+- remove fonts from fontstack that we're not using
+- responsiveness
