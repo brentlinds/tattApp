@@ -10,7 +10,7 @@ to do
     - right now 
 
 - loader 
-    - rotate image (!!!!)
+    - rotate image (!!!!) //LOADER IS FRIGGIN SET Y'ALLLLLL
     - uniqeuify animations
         - separate timing
         - disappear?
@@ -20,7 +20,7 @@ to do
 - favicon //OH BABY YOU'RE DONE TOO
 - spacing over all
 - footer
-- message if no image is available (JS)
+- message if no image is available (JS) ???????????????????????
 - add more banner word options if we can think of them 
 - remove fonts from fontstack that we're not using
 - responsiveness

@@ -46,10 +46,10 @@ app.newIcon = (query) => {
         // console.log(response);
         // create variable to randomize the object selected out of the returned array
         const random = response.icons[Math.floor(Math.random() * response.icons.length)]
-        // console.log(random);
-        let image = random.preview_url;
-        console.log(image);
-        $(".results").html(`<img src= ${image}>`);
+        console.log(random)
+            let image = random.preview_url;
+            console.log(image);
+            $(".results").html(`<img src= ${image}>`);
     });
 }
 
@@ -63,7 +63,7 @@ app.events = () => {
             // commented this out because we wanted users to be able to press enter repeatedly with the same input, but left the code in case we changed our mind 
         // $('input').val("");
         // passing user's input into the function that retrieves their icon
-        $('.loader').show().delay(3000).fadeOut();
+        $('.loader').show().delay(3000).fadeOut()
         app.newIcon(favething);
         app.randomBanner(favething);}
     })
@@ -77,4 +77,3 @@ $(function(){
     app.init();
 
 });
-
