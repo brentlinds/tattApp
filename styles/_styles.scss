@@ -2,6 +2,7 @@
 @import "variables";
 @import "animations";
 @import "banners";
+@import "footer";
 
 body {
     background-color: $backgroundColour;
@@ -12,25 +13,14 @@ h1, h2 {
     padding: 0;
 }
 
-h1, p {
-    color: $mainContrast;
-}
-
-
 header {
     margin: 20px 0;
-}
-
 }
 
 h1, p {
     color: $mainContrast;
 }
 
-
-header {
-    margin: 20px 0;
-}
 
 // currently the only imgs on the page are being generated from the NounProject
 // if we add any more we might need to find another way to do this
@@ -39,6 +29,7 @@ img {
     // padding-top: 30px;
     padding: 100px 50px 0px;
     background-color: transparent;
+    margin-top: 30px;
 }
 
 // setting weird heights/widths/padding so can see the background image while testing - figure out how to do this better
@@ -47,16 +38,12 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // background-image: url("images/notebook.png");
-    // background-image: contain;
-    // background-image: center;
-    background-color: $mainContrast;
+    background-image: url("images/scrappapers.png");
+    background-image: contain;
+    background-image: center;
     align-self: center;
     max-width: 100%;
-    // width: 600px;
-    // height: 800px;
     background-repeat: no-repeat;
-    border-radius: 10px;
     margin: 10px;
     img {
         max-width: 100%;
@@ -65,12 +52,13 @@ img {
 }
 
 .wrapper {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;   
     position: relative;
+    height: 100vh;
 }
 
 input {
@@ -87,12 +75,9 @@ input {
 }
 
 button[type=submit] {
-    // display: none;
     background: none;
     border: none;
     color: $mainContrast;
-    // position: relative;
-    // display: none;
         span {
             padding-top: 5px;
             position: relative;
@@ -154,31 +139,18 @@ button[type=submit] {
     justify-content: center;
         svg {
             margin: 0 auto;
-            margin-top: 100px;
             position:relative;
-            // transform: rotate(180deg);
-        }
-        p {
-            color:white;
+            max-width: 100%;
+            right:-55%
         }
 }
 
-.buzz1 {
-    position: absolute;
-    top:5%;
-    left: 30%;
+.needleBox {
+    transform: rotate(90deg);
+    max-width: 300px;
+    padding-top: 40px;
+
 }
 
-.buzz2 {
-    position: absolute;
-    top:35%;
-    right: 30%;
-}
-
-.buzz3 {
-    position: absolute;
-    bottom:30%;
-    left: 35%;
-}
 
 
