@@ -42,15 +42,11 @@ app.newIcon = (query) => {
     }).then(function (response) {
         // console.log(response);
         // create variable to randomize the object selected out of the returned array
-        if(response === "") {
-            $(".results").html(`<p>Sorry bud gonna need a better idea</p>`); 
-        }
         const random = response.icons[Math.floor(Math.random() * response.icons.length)]
         // console.log(random);
         let image = random.preview_url;
         console.log(image);
         $(".results").html(`<img src= ${image}>`);
-        
     });
 }
 
