@@ -369,10 +369,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   width: 2px;
   background-color: #d1d0de; }
 
-@media (max-width: 544px) {
-  footer {
-    margin-top: 115px; } }
-
 body {
   background-color: #32353a; }
 
@@ -412,11 +408,6 @@ img {
   margin: 10px; }
   .resultsall img {
     max-width: 100%; }
-
-@media (max-width: 810px) {
-  .resultsall {
-    position: relative;
-    bottom: 100px; } }
 
 .wrapper {
   width: 90%;
