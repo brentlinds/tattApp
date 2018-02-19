@@ -26,6 +26,7 @@ app.randomBanner = (bannerWord) => {
         $(".bannerall").addClass(rando);
         $(".bannerall").addClass("bannerafter");
         $(".formcontainer").addClass("moveform");
+        $(".footerhide").toggle();
         $('div.bannerall').text(bannerWord + randomWords[randomWordIndex])
 }
 
@@ -43,10 +44,10 @@ app.newIcon = (query) => {
         // console.log(response);
         // create variable to randomize the object selected out of the returned array
         const random = response.icons[Math.floor(Math.random() * response.icons.length)]
-        // console.log(random);
-        let image = random.preview_url;
-        console.log(image);
-        $(".results").html(`<img src= ${image}>`);
+        console.log(random)
+            let image = random.preview_url;
+            console.log(image);
+            $(".results").html(`<img src= ${image}>`);
     });
 }
 
@@ -59,7 +60,7 @@ app.events = () => {
         if(favething !== "") {
         // $('input').val("");
         // passing user's input into the function that retrieves their icon
-        $('.loader').show().delay(3000).fadeOut();
+        $('.loader').show().delay(3000).fadeOut()
         app.newIcon(favething);
         app.randomBanner(favething);}
     })
@@ -73,4 +74,3 @@ $(function(){
     app.init();
 
 });
-

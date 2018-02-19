@@ -76,12 +76,9 @@ input {
 }
 
 button[type=submit] {
-    // display: none;
     background: none;
     border: none;
     color: $mainContrast;
-    // position: relative;
-    // display: none;
         span {
             padding-top: 5px;
             position: relative;
@@ -143,31 +140,14 @@ button[type=submit] {
     justify-content: center;
         svg {
             margin: 0 auto;
-            margin-top: 100px;
             position:relative;
-            // transform: rotate(180deg);
-        }
-        p {
-            color:white;
+            right: -55%;
+            max-width: 100%;
         }
 }
 
-.buzz1 {
-    position: absolute;
-    top:5%;
-    left: 30%;
+.needleBox {
+    transform: rotate(90deg);
+    max-width: 300px;
+    padding-top: 40px;
 }
-
-.buzz2 {
-    position: absolute;
-    top:35%;
-    right: 30%;
-}
-
-.buzz3 {
-    position: absolute;
-    bottom:30%;
-    left: 35%;
-}
-
-
