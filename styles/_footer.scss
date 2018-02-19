@@ -1,13 +1,11 @@
-.hide {
-    // display: none;
-}
+
 
 .footerhide {
     border-top: 4px dotted $mainContrast;
     // display: none;
     text-align: center;
     font-family: 'Cutive Mono', monospace;
-    margin: 5px 0 10px;
+    margin: 50px 0 10px;
     letter-spacing: 3px;
 }
 .footerflex {
@@ -22,3 +20,20 @@
     text-decoration: underline;
     color: $mainContrast;
 }
+
+.space {
+    width: 2px;
+    background-color: $mainContrast;
+}
+
+@media (max-width: 544px) {
+    footer {
+        margin-top: 115px;
+    }
+}
+
+// @media (max-width: 425px) {
+//     footer {
+//         margin-top: 130px;
+//     }
+// }
