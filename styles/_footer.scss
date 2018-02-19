@@ -1,0 +1,24 @@
+.hide {
+    // display: none;
+}
+
+.footerhide {
+    border-top: 4px dotted $mainContrast;
+    // display: none;
+    text-align: center;
+    font-family: 'Cutive Mono', monospace;
+    margin: 5px 0 10px;
+    letter-spacing: 3px;
+}
+.footerflex {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    // padding-left: 10px;
+    // max-width: 90%;
+}
+
+.footerflex a {
+    text-decoration: underline;
+    color: $mainContrast;
+}

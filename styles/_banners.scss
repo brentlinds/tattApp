@@ -1,7 +1,8 @@
 .bannerall {
-    color: #000000;
+    // color: #000000;
     font-size: 20px;
     text-align: center;
+    padding: 5px 20px 30px;
 }
 
 
@@ -49,17 +50,24 @@
 
 .banner-4 {
     font-family: 'Ewert', cursive;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     padding: 0 10px 10px;
+    text-align: center;
     &::before {
         content:"\2606  "
     }
     &::after {
         content:"  \2606";
     }
-
 }
+@media (max-width: 599px) {
+    font-size: 20px;
+}
+
+
+
+
 
 .banner-5 {
     font-family: 'Raleway Dots', cursive;

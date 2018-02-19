@@ -26,6 +26,9 @@ app.randomBanner = (bannerWord) => {
         $(".bannerall").addClass(rando);
         $(".bannerall").addClass("bannerafter");
         $(".formcontainer").addClass("moveform");
+        // $(".footerhide").toggle();
+        // $("footer").removeClass("hide");
+        // $("footer").addClass("footerhide");
         $('div.bannerall').text(bannerWord + randomWords[randomWordIndex])
 }
 
@@ -57,6 +60,7 @@ app.events = () => {
         // creates a variable to hold user's input
         const favething = $("input").val();
         if(favething !== "") {
+            // commented this out because we wanted users to be able to press enter repeatedly with the same input, but left the code in case we changed our mind 
         // $('input').val("");
         // passing user's input into the function that retrieves their icon
         $('.loader').show().delay(3000).fadeOut();
