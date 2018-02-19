@@ -1,0 +1,184 @@
+@import "normalize";
+@import "variables";
+@import "animations";
+@import "banners";
+
+body {
+    background-color: $backgroundColour;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h1, p {
+    color: $mainContrast;
+}
+
+
+header {
+    margin: 20px 0;
+}
+
+}
+
+h1, p {
+    color: $mainContrast;
+}
+
+
+header {
+    margin: 20px 0;
+}
+
+// currently the only imgs on the page are being generated from the NounProject
+// if we add any more we might need to find another way to do this
+img {
+    // padding: 0;
+    // padding-top: 30px;
+    padding: 100px 50px 0px;
+    background-color: transparent;
+}
+
+// setting weird heights/widths/padding so can see the background image while testing - figure out how to do this better
+// trying to find a background image that's the right look AND the right size 
+.resultsall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-image: url("images/notebook.png");
+    // background-image: contain;
+    // background-image: center;
+    background-color: $mainContrast;
+    align-self: center;
+    max-width: 100%;
+    // width: 600px;
+    // height: 800px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin: 10px;
+    img {
+        max-width: 100%;
+    }
+    
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    position: relative;
+}
+
+input {
+    background: $backgroundColour;
+    border-radius: 50px;
+    border: 3px dotted $mainContrast;
+    padding: 12px;
+    font-size: 16px;
+    color: $mainContrast;
+        &:focus {
+            // outline: none;
+            outline-color: $mainContrast;
+        }
+}
+
+button[type=submit] {
+    // display: none;
+    background: none;
+    border: none;
+    color: $mainContrast;
+    // position: relative;
+    // display: none;
+        span {
+            padding-top: 5px;
+            position: relative;
+            top:3px;
+            right: 5px;
+            font-size: 35px;
+            cursor: pointer;
+        }
+}
+
+.formcontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input {
+        margin-top: 50%;
+    }
+    h1 {
+        font-family: 'Londrina Sketch', cursive;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        font-size: 60px;
+    }
+}
+
+// this class gets added when the form is submitted, do not move above .formcontainer or it'll get overwritten
+.moveform {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    input {
+        margin-top: 0;
+    }
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    display: none;
+    background-color: #252526;
+    background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+    height: 100vh;
+    z-index: 999999999999999999;
+}
+
+.loader-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        svg {
+            margin: 0 auto;
+            margin-top: 100px;
+            position:relative;
+            // transform: rotate(180deg);
+        }
+        p {
+            color:white;
+        }
+}
+
+.buzz1 {
+    position: absolute;
+    top:5%;
+    left: 30%;
+}
+
+.buzz2 {
+    position: absolute;
+    top:35%;
+    right: 30%;
+}
+
+.buzz3 {
+    position: absolute;
+    bottom:30%;
+    left: 35%;
+}
+
+

@@ -1,0 +1,38 @@
+brentlist
+<<<<<<< HEAD
+- focus on cursor
+=======
+- focus on cursor - DONE WOOOOO
+>>>>>>> ef280b68cb99d621a5e9860bdf8b949198ef95ef
+- attribution page
+
+
+to do 
+<<<<<<< HEAD
+- fix button (add arrow)
+=======
+- fix button (add arrow) FRIGGIN SEND IT CAUSE ITS DONEEE
+>>>>>>> ef280b68cb99d621a5e9860bdf8b949198ef95ef
+- display results
+    - contain background image 
+    - right now 
+
+- loader 
+    - rotate image (!!!!)
+    - uniqeuify animations
+        - separate timing
+        - disappear?
+    - generally improve
+    - background image is currently pulling from their site - download if we're keeping it
+        - BRENT i'm not set on that particular image, just thought it needed something?  let me know what you think
+<<<<<<< HEAD
+- favicon
+=======
+- favicon //OH BABY YOU'RE DONE TOO
+>>>>>>> ef280b68cb99d621a5e9860bdf8b949198ef95ef
+- spacing over all
+- footer
+- message if no image is available (JS)
+- add more banner word options if we can think of them 
+- remove fonts from fontstack that we're not using
+- responsiveness
