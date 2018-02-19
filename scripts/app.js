@@ -1,16 +1,32 @@
 const app = {}
 
 app.randomBanner = (bannerWord) => {
-    let bannerArray = ["banner-1", "banner-2", "banner-3"]
+    let bannerArray = ["banner-1", "banner-2", "banner-3", "banner-4", "banner-5", "banner-6"]
+    let randomWords = [" 4 life", "  AF", " or die", " before dishonour", " for life", " and kittens", " for the win"]
     let randomIndex = Math.floor(Math.random() * bannerArray.length);
+    // chooses some random text from the above array
+    let randomWordIndex = Math.floor(Math.random() * randomWords.length);
+    // chooses a random banner from the above array
+    
     let rando = bannerArray[randomIndex]
-    $("form").on('submit', function() {
-        $('.banner').switchClass("banner", rando, 1000, "easeInOutQuad");
-
-    // $('div.banner').switchClass('banner', rando, 1000, "easeInOutQuad");
-    // .delay$('#example').arctext({ radius: 300 });
-})
-$('div.banner p#example').text(bannerWord + " 4lyfe till I die everyday")
+        $(".banner").removeClass("banner");
+    const ban = $('.bannerall');
+    if (ban.hasClass('banner-1')) {
+        ban.removeClass('banner-1')
+    } else if (ban.hasClass('banner-2')) {
+        ban.removeClass('banner-2')
+    } else if (ban.hasClass('banner-3')) {
+        ban.removeClass('banner-3') 
+    } else if (ban.hasClass('banner-4')) {
+        ban.removeClass('banner-4') 
+    } else if (ban.hasClass('banner-5')) {
+        ban.removeClass('banner-5')
+    } else if (ban.hasClass('banner-6')) {
+        ban.removeClass('banner-6');}
+        $(".bannerall").addClass(rando);
+        $(".bannerall").addClass("bannerafter");
+        $(".formcontainer").addClass("moveform");
+        $('div.bannerall').text(bannerWord + randomWords[randomWordIndex])
 }
 
 app.newIcon = (query) => {
@@ -26,12 +42,14 @@ app.newIcon = (query) => {
     }).then(function (response) {
         // console.log(response);
         // create variable to randomize the object selected out of the returned array
+        if(response === "") {
+            $(".results").html(`<p>Sorry bud gonna need a better idea</p>`); 
+        }
         const random = response.icons[Math.floor(Math.random() * response.icons.length)]
         // console.log(random);
         let image = random.preview_url;
         console.log(image);
         $(".results").html(`<img src= ${image}>`);
-        // $("#demo1").text(" 4lyfe")
         
     });
 }
@@ -60,13 +78,3 @@ $(function(){
 
 });
 
-// // Instantiate `CircleType` with an HTML element.
-// const circleType = new CircleType(document.getElementById('demo1'));
-
-// // Set the text radius and direction. Note: setter methods are chainable.
-// circleType.radius(150).dir(-1);
-
-
-        $().ready(function() {
-            $('#example').arctext({ radius: 500 });
-        });
